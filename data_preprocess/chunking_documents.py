@@ -10,7 +10,7 @@ from google import genai
 from google.genai import types
 from langchain_core.output_parsers import JsonOutputParser
 
-response_rewriting_prompt = """You are the text splitter and summary tools. Please splitting given document to chunk of text that have content specific and generate title describe the main subject of the each chunk:
+response_rewriting_prompt = """You are the text splitter and summary tools. Please split the given document into chunks of text that have specific content and generate a title that describes the main subject of each chunk:
 [document]: {document}
 Please output in JSON format as follows: {{"chunk": [{"title": "title", "content": "text"}]}}."""
 
